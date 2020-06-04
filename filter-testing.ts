@@ -29,7 +29,7 @@ export class FilterTesting {
 
     // filter()
     aggregatedFilter = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       resultTexts = texts.filter(t => t.charAt(0) === charToFind);
       timer.end();
@@ -38,10 +38,10 @@ export class FilterTesting {
 
     // for ()
     aggregatedFor = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       resultTexts = [];
-      for(let i=0; i < textsLength; i++){
+      for (let i=0; i < textsLength; i++){
         if(texts[i].charAt(0) === charToFind){
           resultTexts.push(texts[i]);
         }

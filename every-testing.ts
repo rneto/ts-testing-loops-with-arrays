@@ -28,7 +28,7 @@ export class EveryTesting {
 
     // every()
     aggregatedEvery = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       hasEvery = texts.every(t => t.length > 5);
       timer.end();
@@ -37,10 +37,10 @@ export class EveryTesting {
 
     // for ()
     aggregatedFor = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       hasEvery = true;
-      for(let i=0; i < textsLength; i++){
+      for (let i=0; i < textsLength; i++){
         if(texts[i].length <= 4){
           hasEvery = false;
           break;

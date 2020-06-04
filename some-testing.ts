@@ -29,7 +29,7 @@ export class SomeTesting {
 
     // some()
     aggregatedSome = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       hasSome = texts.some(t => t === textToFind);
       timer.end();
@@ -38,10 +38,10 @@ export class SomeTesting {
 
     // for ()
     aggregatedFor = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       hasSome = false;
-      for(let i=0; i < textsLength; i++){
+      for (let i=0; i < textsLength; i++){
         if(texts[i] === textToFind){
           hasSome = true;
           break;

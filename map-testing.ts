@@ -28,7 +28,7 @@ export class MapTesting {
 
     // map()
     aggregatedMap = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       resultTexts = texts.map(t => t.toUpperCase());
       timer.end();
@@ -37,10 +37,10 @@ export class MapTesting {
 
     // for ()
     aggregatedFor = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       resultTexts = [];
-      for(let i=0; i < textsLength; i++) {
+      for (let i=0; i < textsLength; i++) {
         resultTexts[i] = texts[i].toUpperCase();
       }
       timer.end();

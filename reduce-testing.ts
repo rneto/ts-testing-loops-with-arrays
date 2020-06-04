@@ -28,7 +28,7 @@ export class ReduceTesting {
 
     // reduce()
     aggregatedReduce = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       sumResult = numbers.reduce((a, b) => a + b);
       timer.end();
@@ -37,10 +37,10 @@ export class ReduceTesting {
 
     // for ()
     aggregatedFor = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       sumResult = 0;
-      for(let i=0; i < numbersLength; i++) {
+      for (let i=0; i < numbersLength; i++) {
         sumResult += numbers[i];
       }
       timer.end();

@@ -28,7 +28,7 @@ export class ForEachTesting {
 
     // forEach()
     aggregatedForEach = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
       numbers.forEach(n => sumResult += n);
       timer.end();
@@ -38,9 +38,9 @@ export class ForEachTesting {
     // for ()
     aggregatedFor = 0;
     sumResult = 0;
-    for(let i = 0; i < maxTests; i++){
+    for (let i = 0; i < maxTests; i++){
       timer.start();
-      for(let i=0; i < numbersLength; i++){
+      for (let i=0; i < numbersLength; i++){
         sumResult += numbers[i];
       }
       timer.end();
