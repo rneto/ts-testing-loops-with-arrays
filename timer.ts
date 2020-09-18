@@ -5,7 +5,7 @@ export class Timer {
   /**
    * Timer constructor.
    */
-  contructor () {
+  constructor () {
      this.startTime = (new Date).getTime();
      this.endTime = this.startTime;
   }
